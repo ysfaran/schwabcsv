@@ -1,6 +1,5 @@
 import { NextFunction, Request, Response } from "express";
 import { InvalidCSVURLError } from "../../evaluation/evaluation-service";
-import { InvalidSpeechCSVError } from "../../evaluation/speech";
 import { BadRequestError } from "../http-errors/bad-request-error";
 import { HttpError } from "../http-errors/http-error";
 import { InternalServerError } from "../http-errors/internal-server-error";

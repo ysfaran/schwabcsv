@@ -3,12 +3,12 @@ import { BaseError } from "../base-error";
 export interface HttpErrorProps {
   status: number;
   message: string;
-  detail?: any;
+  detail?: unknown;
 }
 
 export abstract class HttpError extends BaseError {
   public status: number;
-  public detail?: any;
+  public detail?: unknown;
 
   constructor(props: HttpErrorProps) {
     super(props.message);

@@ -14,8 +14,6 @@ const TOPIC_NAME_FILTER = "Internal Security";
 export class InvalidCSVURLError extends Error {}
 
 export class EvaluationService {
-  constructor() {}
-
   public async evaluateFromURLs(URLs: string[]): Promise<EvaluationResult> {
     const uniqueURLs = Array.from(new Set(URLs));
 

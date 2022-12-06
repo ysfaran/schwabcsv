@@ -28,6 +28,8 @@ evaluationRouter.get(
         throw new ValidationError({ errors: errors.array() });
       }
 
+      // since the validation passed req.query.url has to be a string[]
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       const urls = req.query!.url as unknown as string[];
       const evaluationResult = await evaluationService.evaluateFromURLs(urls);
 
