@@ -9,7 +9,8 @@
     "start": "ts-node src/server.ts",
     "dev": "ts-node-dev src/server.ts --watch src/**/*",
     "test": "jest",
-    "lint": "eslint . && prettier --check ."
+    "lint": "eslint . && prettier --check .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@types/morgan": "^1.9.3",
