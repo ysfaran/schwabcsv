@@ -11,20 +11,28 @@ export const mapToHttpError = (
   res: Response,
   next: NextFunction
 ) => {
-  console.error(err);
+  if (process.env.NODE_ENV !== "test") {
+    console.error(err);
+  }
 
   switch (true) {
     case err instanceof HttpError:
       return next(err);
     case err instanceof InvalidCSVURLError:
-      console.log("InvalidCSVURLError", err.message);
-
-      return next(new BadRequestError({ message: err.message }));
+      return next(
+        new BadRequestError({
+          message: err.message,
+          detail: { type: "InvalidCSVURLError" },
+        })
+      );
     case err instanceof ValidationError:
       return next(
         new BadRequestError({
           message: err.message,
-          detail: (err as ValidationError).errors,
+          detail: {
+            type: "ValidationError",
+            errors: (err as ValidationError).errors,
+          },
         })
       );
     default:
