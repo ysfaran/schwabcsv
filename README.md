@@ -28,6 +28,16 @@ Run static code analyzer. This includes checks for proper code formatting.
 yarn lint
 ```
 
+### Run Tests
+
+Run all tests or decide to only run unit/integration tests.
+
+```sh
+yarn test
+yarn test:unit
+yarn test:integration
+```
+
 ## API
 
 The application consists of a single endpoint. It accepts a list URL's as query parameters:
