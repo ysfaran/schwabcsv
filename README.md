@@ -67,6 +67,21 @@ http://localhost:3000/csv/csv1.csv
 http://localhost:3000/csv/csv2.csv
 ```
 
+If the request was successful a response with following JSON body will be returned:
+
+```json
+{
+    // Speaker with most speeches in 2013
+    "mostSpeeches": "Caesare Collin",
+    // Speaker with most speeches of topic "Internal Security"
+    "mostSecurity": "Alexander Abel",
+    // Speaker with least words used during his speeches
+    "leastWordy": "Bernhard Belling"
+}
+```
+
+All fields can possibly be set to `null`. This can happen for example for `mostSpeeches` if two speaker have the same amount speeches in 2013.
+
 ## Tech Stack
 
 Following TypeScript tech stack is used for this application:
