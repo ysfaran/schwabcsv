@@ -71,12 +71,12 @@ If the request was successful a response with following JSON body will be return
 
 ```json
 {
-    // Speaker with most speeches in 2013
-    "mostSpeeches": "Caesare Collin",
-    // Speaker with most speeches of topic "Internal Security"
-    "mostSecurity": "Alexander Abel",
-    // Speaker with least words used during his speeches
-    "leastWordy": "Bernhard Belling"
+  // Speaker with most speeches in 2013
+  "mostSpeeches": "Caesare Collin",
+  // Speaker with most speeches of topic "Internal Security"
+  "mostSecurity": "Alexander Abel",
+  // Speaker with least words used during his speeches
+  "leastWordy": "Bernhard Belling"
 }
 ```
 
