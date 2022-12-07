@@ -32,7 +32,7 @@ export class EvaluationService {
         TOPIC_NAME_FILTER
       );
 
-    const leastWordySpeaker = this.getLeastWordySpeaker(speakers);
+    const leastWordySpeaker = this.evaluateLeastWordySpeaker(speakers);
 
     return {
       mostSpeeches: speakerWithMostSpeechesInYear?.name ?? null,
@@ -109,7 +109,7 @@ export class EvaluationService {
     return sortedSpeakers[0];
   }
 
-  private getLeastWordySpeaker(speakers: Speaker[]) {
+  private evaluateLeastWordySpeaker(speakers: Speaker[]) {
     const sortedSpeakers = speakers
       .map((speaker) => ({
         ...speaker,
