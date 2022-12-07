@@ -61,7 +61,8 @@ http://localhost:3000/csv/csv2.csv
 
 Following TypeScript tech stack is used for this application:
 
-- **[express](https://expressjs.com/)**: Node server to provide the API
-- **[jest](https://jestjs.io/)**: JavaScript testing framework for unit and integration tests
-- **[eslint](https://eslint.org/)**: Static code analyzer for JavaScript/TypeScript
-- **[prettier](https://jestjs.io/)**: Code formatter for JavaScript/TypeScript
+- **[ExpressJS](https://expressjs.com/)**: Node server to provide the API
+- **[Jest](https://jestjs.io/)**: JavaScript testing framework for unit and integration tests
+- **[ESLint](https://eslint.org/)**: Static code analyzer for JavaScript/TypeScript
+- **[Prettier](https://jestjs.io/)**: Code formatter for JavaScript/TypeScript
+- **[GitHub Actions](https://github.com/features/actions/)**: Workflow automation through CI/CD pipelines

@@ -9,6 +9,8 @@
     "start": "ts-node src/server.ts",
     "dev": "ts-node-dev src/server.ts --watch src/**/*",
     "test": "jest",
+    "test:unit": "jest .*.unit-test.ts",
+    "test:integration": "jest .*.integration-test.ts",
     "lint": "eslint . && prettier --check .",
     "typecheck": "tsc --noEmit"
   },
