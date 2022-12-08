@@ -2,6 +2,16 @@
 
 A small API to parse CSV and generate statistics.
 
+## Prerequisites
+
+This project requires [Node](https://nodejs.org/en/) version >=18 and [yarn](https://yarnpkg.com/getting-started/install) to be installed.
+
+To run any command all node dependencies need to be installed as well:
+
+```sh
+yarn install
+```
+
 ## Commands
 
 ### Start Server
